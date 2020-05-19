@@ -22,6 +22,51 @@
 
   <body>
     <!-- CUSTOM HTML -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Сделать запрос</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Вашe имя</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Ваш email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Ваш телефон</label>
+                <input type="text" class="form-control" id="phone" />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Подтвердить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -90,12 +135,17 @@
             <div class="pr-5">
               <h1>Бухгалтерские услуги для бизнеса</h1>
               <p>Нужна консультация ведущего бухгалтера?</p>
-              <button type="button" class="btn-lg btn btn-primary mt-3">
+              <button
+                type="button"
+                class="btn-lg btn btn-primary mt-3"
+                data-toggle="modal"
+                data-target="#staticBackdrop"
+              >
                 Получить
               </button>
             </div>
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-7 d-none d-lg-block">
             <img
               class="img-fluid"
               src="./images/src/buh.jpg"
