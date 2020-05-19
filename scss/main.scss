@@ -1,3 +1,29 @@
 @import "config";
 
-// CUSTOM USER STYLES & IMPORTS
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1e2022;
+  font-weight: 600;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.header {
+  padding: 1rem 0;
+}
+
+.section {
+  padding: 1.25rem 0;
+}

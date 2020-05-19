@@ -4,7 +4,6 @@ $accent: #377dff; // Accent Color
 $fontsize: 1rem; // Body Font Size
 $textcolor: #677788; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$roboto: Roboto, sans-serif; // Roboto Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
@@ -24,15 +23,15 @@ $gutter: $grid-gutter-width;
   }
 }
 
-@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
-@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
-@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
-@include font(
-  "Roboto",
-  italic,
-  700,
-  "../fonts/roboto-bolditalic-webfont.woff2"
-);
+// @include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
+// @include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
+// @include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+// @include font(
+//   "Roboto",
+//   italic,
+//   700,
+//   "../fonts/roboto-bolditalic-webfont.woff2"
+// );
 
 // GENERAL DOCUMENT STYLES
 
@@ -57,7 +56,7 @@ textarea {
 }
 
 body {
-  font-family: $roboto;
+  font-family: "Open Sans", sans-serif;
   font-size: $fontsize;
   min-width: 320px;
   position: relative;
