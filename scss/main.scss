@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e2022;
+  color: $titlecolor;
   font-weight: 600;
 }
 
@@ -46,23 +46,32 @@ h6 {
 
 .main-slider {
   &-title {
-    color: #fff;
+    color: $white;
   }
   &-descr {
-    color: #fff;
+    color: $white;
     font-size: 1.25rem;
   }
   &-subTitle {
-    color: #fff;
+    color: $white;
     opacity: 0.5;
     font-size: 0.85rem;
+  }
+}
+
+.btn-outline-secondary {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: $white;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
   }
 }
 
 .slick-dots {
   bottom: 25px;
   li button:before {
-    color: #fff;
+    color: $white;
     opacity: 1;
     font-size: 8px;
   }
