@@ -27,3 +27,46 @@ h6 {
 .section {
   padding: 1.25rem 0;
 }
+
+.slider-bg {
+  height: 560px;
+  padding-top: 100px;
+  background-size: cover;
+  background-position: center;
+  &__1 {
+    background-image: url(../images/dest/1.jpg);
+  }
+  &__2 {
+    background-image: url(../images/dest/2.jpg);
+  }
+  &__3 {
+    background-image: url(../images/dest/3.jpg);
+  }
+}
+
+.main-slider {
+  &-title {
+    color: #fff;
+  }
+  &-descr {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  &-subTitle {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.85rem;
+  }
+}
+
+.slick-dots {
+  bottom: 25px;
+  li button:before {
+    color: #fff;
+    opacity: 1;
+    font-size: 8px;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+  }
+}
