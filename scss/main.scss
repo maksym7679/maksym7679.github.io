@@ -92,7 +92,7 @@ a {
   &-title {
     a {
       color: $titlecolor;
-      transition: opacity 0.15s ease;
+      transition: opacity 0.2s ease;
       &:hover {
         opacity: 0.7;
       }
@@ -100,7 +100,7 @@ a {
   }
   &-link {
     color: $textcolor;
-    transition: color 0.15s ease;
+    transition: color 0.2s ease;
     &:hover {
       color: #ff0101;
     }
