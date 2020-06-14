@@ -27,12 +27,30 @@ a {
   }
 }
 
+.alert {
+  border-radius: 0;
+}
+
 .navbar {
   padding: 0;
 }
 
 .header {
   padding: 1rem 0;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #cce5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 40%;
+  }
 }
 
 .section {
@@ -78,7 +96,7 @@ a {
 
 .service-item {
   &-icon {
-    background-color: #ff0101;
+    background-color: #eb9817;
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -102,8 +120,19 @@ a {
     color: $textcolor;
     transition: color 0.2s ease;
     &:hover {
-      color: #ff0101;
+      color: #eb9817;
     }
+  }
+}
+
+.accounting {
+  &-title {
+    border-bottom: 1px solid #161c2d;
+  }
+  &-item {
+    cursor: pointer;
+    display: block;
+    text-align: center;
   }
 }
 
